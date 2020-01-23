@@ -1,0 +1,19 @@
+@ECHO OFF
+SETLOCAL
+
+:: EDIT Frofile Name from getWifi.cmd
+SET "_wifi="
+
+if "%_wifi%" == "" SET _wifi=%1
+if "%_wifi%" == "" GOTO info
+
+echo adding Wi-FI profile: %~dp0Wi-Fi-%_wifi%.xml
+netsh wlan add profile filename="%~dp0Wi-Fi-%_wifi%.xml" user=all
+GOTO:EOF
+
+:info
+ECHO.
+ECHO You have to have specify profile name
+ECHO -------------------------------------------
+ECHO     Ex. "addWiFi.cmd profilename" or
+ECHO     Edit script with "SET _wifi=profilename"
