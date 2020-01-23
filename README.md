@@ -3,9 +3,10 @@ Capture &amp; Restore Windows 10 WiFi Profiles
 
 ### Three CMD files that will allow you capture and transfer your Wi-Fi profile anywhere
 ------------------------------------------------------------------------------------
-*1 getWiFi.cmd
-*2 exportWiFi.cmd
-*3 addWiFi.cmd
+-- *1 getWiFi.cmd
+-- *2 exportWiFi.cmd
+-- *3 addWiFi.cmd
+------------------------------------------------------------------------------------
 
 ### USE
 - Get desired profile name from "profiles.txt"
